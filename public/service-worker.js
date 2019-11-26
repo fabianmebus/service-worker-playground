@@ -4,7 +4,7 @@ const offlineUrl = '/offline-page.html';
 
 addEventListener('install', event => {
   event.waitUntil(
-    caches.open('offline-cache-1')
+    caches.open('offline-cache-2')
       .then(cache => {
         return cache.addAll([
           '/',
