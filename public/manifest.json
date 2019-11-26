@@ -1,21 +1,21 @@
 {
   "lang": "en",
-  "short_name": "sw-test-firebase",
-  "name": "Service Worker + Firebase Test",
+  "short_name": "SWP",
+  "name": "Service Worker Playground",
   "start_url": "/",
   "icons": [
     {
-      "src": "/android-chrome-192x192.png",
+      "src": "/android-chrome-192x192.png?v=JyBoeJoERb",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/android-chrome-512x512.png",
+      "src": "/android-chrome-512x512.png?v=JyBoeJoERb",
       "sizes": "512x512",
       "type": "image/png"
     }
   ],
-  "theme_color": "#2d89ef",
-  "background_color": "#2d89ef",
+  "theme_color": "#28486c",
+  "background_color": "#28486c",
   "display": "minimal-ui"
 }

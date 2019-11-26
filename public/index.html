@@ -6,15 +6,32 @@
   <meta name="description" content="Service Worker + Firebase Test">
 
   <style>
+
+    html {
+      box-sizing: border-box;
+    }
+
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+
     body {
       background: #ECEFF1;
       color: rgba(0, 0, 0, 0.87);
       font-family: Roboto, Helvetica, Arial, sans-serif;
       margin: 0;
       padding: 0;
+
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
     }
 
-    #message {
+    main {
+      flex: 1;
+    }
+
+    .content {
       background: white;
       max-width: 360px;
       margin: 100px auto 16px;
@@ -23,53 +40,94 @@
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     }
 
-    #message h1 {
+    .content h1 {
       font-size: 22px;
       font-weight: 300;
       color: rgba(0, 0, 0, 0.6);
       margin: 0 0 16px;
     }
 
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      margin: 1rem 0;
+    }
+
+    footer {
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+
+    small {
+      color: gray;
+    }
+
+    small a {
+      text-decoration: none;
+      color: gray;
+    }
+
     @media (max-width: 600px) {
-      body, #message {
+      body, .content {
         margin-top: 0;
         background: white;
         box-shadow: none;
       }
 
       body {
-        border-top: 16px solid #2d89ef;
+        border-top: 16px solid #28486c;
       }
     }
   </style>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2d89ef">
-  <meta name="msapplication-TileColor" content="#2d89ef">
-  <meta name="theme-color" content="#2d89ef">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=JyBoeJoERb">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=JyBoeJoERb">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=JyBoeJoERb">
+  <link rel="manifest" href="/manifest.json?v=JyBoeJoERb">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg?v=JyBoeJoERb" color="#28486c">
+  <link rel="shortcut icon" href="/favicon.ico?v=JyBoeJoERb">
+  <meta name="msapplication-TileColor" content="#28486c">
+  <meta name="theme-color" content="#28486c">
 </head>
+
 <body>
-  <div id="message">
-    <h1>sw-test-firebase</h1>
-    <p>
-      <a href="test.html">test</a>
-    </p>
-    <p>
-      <a href="test-2.html">test 2</a>
-    </p>
-  </div>
+
+  <main>
+    <article class="content">
+      <h1>Service Worker Playground</h1>
+      <ul>
+        <li>
+          <a href="test.html">Page 1</a>
+        </li>
+        <li>
+          <a href="test-2.html">Page 2</a>
+        </li>
+      </ul>
+    </article>
+  </main>
+
+  <footer>
+    <small>
+      Icons made by
+      <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market" target="_blank">Vectors Market</a>
+      from <a href="https://www.flaticon.com/" title="Flaticon" target="_blank">www.flaticon.com</a>
+    </small>
+  </footer>
+
   <script>
     if (navigator.serviceWorker) {
-      window.addEventListener('load', function() {
+      window.addEventListener('load', function () {
         navigator.serviceWorker.register('/service-worker.js', {
           scope: '/'
         });
       });
     }
   </script>
+
 </body>
 </html>
