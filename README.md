@@ -11,6 +11,12 @@ $ npm install
 
 ## Deploying
 
+### With [Travis CI](https://travis-ci.org/)
+
+Just push changes to the `master` branch.
+
+### Without [Travis CI](https://travis-ci.org/)
+
 ```bash
 $ firebase login
 $ firebase deploy
