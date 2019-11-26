@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>sw-test-firebase</title>
-  <meta name="description" content="Service Worker + Firebase Test">
+  <title>Service Worker Playground</title>
+  <meta name="description" content="Service Worker Playground">
 
   <style>
-
     html {
       box-sizing: border-box;
     }
@@ -21,7 +20,6 @@
       font-family: Roboto, Helvetica, Arial, sans-serif;
       margin: 0;
       padding: 0;
-
       display: flex;
       min-height: 100vh;
       flex-direction: column;
@@ -33,33 +31,45 @@
 
     .content {
       background: white;
-      max-width: 360px;
+      max-width: 410px;
       margin: 100px auto 16px;
       padding: 32px 24px;
       border-radius: 3px;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     }
 
-    .content h1 {
+    h1 {
       font-size: 22px;
       font-weight: 300;
       color: rgba(0, 0, 0, 0.6);
       margin: 0 0 16px;
     }
 
+    h2 {
+      color: #28486c;
+      font-weight: bold;
+      font-size: 16px;
+      margin: 0 0 8px;
+    }
+
+    p {
+      line-height: 1.4;
+    }
+
     ul {
       list-style: none;
-      margin: 0;
+      margin: 0 -1rem;
       padding: 0;
+      display: flex;
     }
 
     li {
-      margin: 1rem 0;
+      margin: 0 1rem;
     }
 
     footer {
       text-align: center;
-      padding-bottom: 1rem;
+      padding: 1rem;
     }
 
     small {
@@ -101,8 +111,9 @@
     <article class="content">
       <h1>Service Worker Playground</h1>
       <ul>
-        <li><a href="test.html">Page 1</a></li>
-        <li><a href="test-2.html">Page 2</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="page-1.html">Page 1</a></li>
+        <li><a href="page-2.html">Page 2</a></li>
       </ul>
     </article>
   </main>
