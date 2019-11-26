@@ -1,0 +1,21 @@
+{
+  "name": "service-worker-playground",
+  "version": "1.0.0",
+  "description": "A playground to test and experiment with Service Worker.",
+  "author": "Fabian Mebus <hello@fabianmebus.com> (https://fabianmebus.com)",
+  "engines": {
+    "node": "12.13.0",
+    "npm": "6.12.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fabianmebus/service-worker-playground.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fabianmebus/service-worker-playground/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "firebase-tools": "^7.8.1"
+  }
+}
