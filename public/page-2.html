@@ -5,106 +5,23 @@
   <title>Page 2 - Service Worker Playground</title>
   <meta name="description" content="Service Worker Playground">
 
-  <style>
-    html {
-      box-sizing: border-box;
-    }
-
-    *, *:before, *:after {
-      box-sizing: inherit;
-    }
-
-    body {
-      background: #ECEFF1;
-      color: rgba(0, 0, 0, 0.87);
-      font-family: Roboto, Helvetica, Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      min-height: 100vh;
-      flex-direction: column;
-    }
-
-    main {
-      flex: 1;
-    }
-
-    .content {
-      background: white;
-      max-width: 410px;
-      margin: 100px auto 16px;
-      padding: 32px 24px;
-      border-radius: 3px;
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-      min-height: 12rem;
-    }
-
-    h1 {
-      font-size: 22px;
-      font-weight: 300;
-      color: rgba(0, 0, 0, 0.6);
-      margin: 0 0 16px;
-    }
-
-    h2 {
-      color: #28486c;
-      font-weight: bold;
-      font-size: 16px;
-      margin: 0 0 8px;
-    }
-
-    p {
-      line-height: 1.4;
-    }
-
-    ul {
-      list-style: none;
-      margin: 0 -1rem;
-      padding: 0;
-      display: flex;
-    }
-
-    li {
-      margin: 0 1rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-    }
-
-    small a {
-      text-decoration: none;
-      color: rgba(0, 0, 0, 0.87);
-    }
-
-    @media (max-width: 600px) {
-      body, .content {
-        margin-top: 0;
-        background: white;
-        box-shadow: none;
-      }
-
-      body {
-        border-top: 16px solid #28486c;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="/styles/styles.css">
+  <script src="/scripts/main.js" defer="defer"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=JyBoeJoERb">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=JyBoeJoERb">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=JyBoeJoERb">
-  <link rel="manifest" href="/manifest.json?v=JyBoeJoERb">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg?v=JyBoeJoERb" color="#28486c">
-  <link rel="shortcut icon" href="/favicon.ico?v=JyBoeJoERb">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="manifest" href="/assets/manifest.json">
+  <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#28486c">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
   <meta name="msapplication-TileColor" content="#28486c">
   <meta name="theme-color" content="#28486c">
 </head>
 <body>
 
   <main>
-    <article class="content">
+    <article>
       <h1>Page 2</h1>
       <ul>
         <li><a href="/">Home</a></li>
@@ -122,14 +39,5 @@
     </small>
   </footer>
 
-  <script>
-    if (navigator.serviceWorker) {
-      window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/service-worker.js', {
-          scope: '/'
-        });
-      });
-    }
-  </script>
 </body>
 </html>

@@ -1,0 +1,84 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.87);
+  background: #ECEFF1;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+main {
+  flex: 1;
+}
+
+article {
+  background: white;
+  max-width: 26rem;
+  margin: 6rem auto 1rem;
+  padding: 2rem 1.5rem;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  min-height: 12rem;
+}
+
+h1 {
+  font-size: 1.375rem;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0 0 1rem;
+}
+
+h2 {
+  color: #28486c;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0 0 8px;
+}
+
+p {
+  line-height: 1.4;
+}
+
+ul {
+  list-style: none;
+  margin: 0 -1rem;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  margin: 0 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+}
+
+small a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+@media (max-width: 600px) {
+  body {
+    border-top: 1rem solid #28486c;
+    background: white;
+  }
+
+  article {
+    margin-top: 0;
+    background: white;
+    box-shadow: none;
+  }
+}
