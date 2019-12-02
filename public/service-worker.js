@@ -25,7 +25,7 @@ for (const OFFLINE_RESOURCE_URL of OFFLINE_RESOURCE_URLS) {
 }
 
 self.addEventListener('install', (event) => {
-  console.log('--- SW --- install event');
+  console.log('--- SW --- install event ------------------------------');
   /* Kick out the current active worker and activate the new one as soon as it enters the waiting phase
   See https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle#skip_the_waiting_phase */
   self.skipWaiting();
@@ -36,7 +36,7 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('activate', (event) => {
-  console.log('--- SW --- activate event');
+  console.log('--- SW --- activate event ------------------------------');
   event.waitUntil((async () => {
     /* Enable navigation preload if it's supported.
     See https://developers.google.com/web/updates/2017/02/navigation-preload */
@@ -47,12 +47,12 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
-  console.log('--- SW --- fetch event');
+  console.log('--- SW --- fetch event  ------------------------------');
   /* Ignore non-GET requests */
   if (event.request.method !== 'GET') {
     return;
   }
-  console.log(`--- SW --- fetch url:  ${event.request.url} ------------------------------`);
+  console.log(`--- SW --- fetch url:  ${event.request.url}`);
   /* We only want to call event.respondWith() if this is a navigation request for an HTML page.
   All requests for an HTML page have to go through this service worker fetch handling to get the
   offline state, which is handled in the catch. */
