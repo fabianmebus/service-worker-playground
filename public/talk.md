@@ -1,11 +1,12 @@
 
+# Create an Offline Page with a Service Worker
 
 
 
 
 
 
-* show [site](https://service-worker-playgroun-152cd.web.app/) 
+* [site](https://service-worker-playgroun-152cd.web.app/) 
 
 --- [index.html](index.html)
 
@@ -125,7 +126,7 @@
 
 * CSS is not cached ... '/styles/styles.css'
 
-    await cache.addAll([OFFLINE_PAGE_URL], '/styles/styles.css');
+    await cache.addAll([OFFLINE_PAGE_URL, '/styles/styles.css']);
     return await cache.match(event.request) || cache.match(OFFLINE_PAGE_URL);
 
 * the "waiting phase" =(
