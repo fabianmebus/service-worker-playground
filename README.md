@@ -34,7 +34,7 @@ Right now the Service Worker in [`service-worker.js`](./public/service-worker.js
 * Start with a static cache name (e.g. "offline") which is not changed for every new SW installation.
 * Switch on HTTP caching again and test your desired behaviour (again).
 
-#### Resources
+### Resources
 
 * https://googlechrome.github.io/samples/service-worker/custom-offline-page/
 * https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle#skip_the_waiting_phase
@@ -47,26 +47,3 @@ Right now the Service Worker in [`service-worker.js`](./public/service-worker.js
 * https://serviceworke.rs/
 * https://developer.mozilla.org/de/docs/Web/HTTP/Headers/Cache-Control
 * https://developer.mozilla.org/en-US/docs/Web/API/NavigatorOnLine/onLine
-
-## Playground
-### Development
-
-```bash
-$ git clone https://github.com/fabianmebus/service-worker-playground.git
-$ cd service-worker-playground
-$ nvm use
-$ npm install
-``` 
-
-### Deployment
-
-#### With [Travis CI](https://travis-ci.org/)
-
-Just push changes to the `master` branch.
-
-#### Without [Travis CI](https://travis-ci.org/)
-
-```bash
-$ firebase login
-$ firebase deploy
-``` 
