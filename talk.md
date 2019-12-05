@@ -8,7 +8,7 @@
 
 * [site](https://service-worker-playgroun-152cd.web.app/) 
 
---- [index.html](index.html)
+--- [index.html](public/index.html)
 
 * SW is a proxy server
 
@@ -32,7 +32,7 @@
 
 * have to be register by JS 
 
---- [main.js](scripts/main.js)
+--- [main.js](public/scripts/main.js)
 
 * once installed and activated all requests in scope go through the SW
 
@@ -58,7 +58,7 @@
 
 * SW code in an own JS file
 
---- [service-worker.js](service-worker.js)
+--- [service-worker.js](public/service-worker.js)
 
 * SW have an own cache it is not: the HTTP cache, the application cache, local storage, indexedDB, etc. 
 
@@ -173,7 +173,7 @@
 
 
 * many more challenges, but ...  
-* [service-worker__no-comments-or-debug.js](service-worker__no-comments-or-debug.js)
+* [service-worker__no-comments-or-debug.js](public/service-worker__done.js)
 
 
 

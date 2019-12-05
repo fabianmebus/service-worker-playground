@@ -1,3 +1,5 @@
+/* CAUTION! Do not use this code, that was just my starting point, there are a lot of problems here */
+
 const CACHE_NAME = 'offline';
 const OFFLINE_PAGE_URL = '/offline.html';
 
