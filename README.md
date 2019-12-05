@@ -6,7 +6,7 @@
 
 ---
 
-Right now the Service Worker in `service-worker.js` has just **one** purpose:
+Right now the Service Worker in [`service-worker.js`](./public/service-worker.js) has just **one** purpose:
  
 **Serve a styled HTML (offline) page on any HTML request if the network connection isn’t working.**  
 
@@ -17,7 +17,8 @@ Right now the Service Worker in `service-worker.js` has just **one** purpose:
 * There are a lot of possibilities, decide up front what do you want to accomplish with your SW. The [Service Worker Cookbook](https://serviceworke.rs/) is a good start for that.
 * Know your browser (different manual reload options) and your browser dev tools.
 * Have a basic understanding of HTTP caching, here you have [Caching best practices & max-age gotchas by Jake Archibald](https://jakearchibald.com/2016/caching-best-practices/).
-* Switch off HTTP caching completely, for all (!) resources, with the HTTP header `Cache-Control: no-store` for instance. 
+* Switch off HTTP caching completely, for all (!) resources, with the HTTP header `Cache-Control: no-store` for instance.
+* Set the **Preserve log** option for your JS console.
 * Think about the scope, the SW should handel, have a look at [Register a service worker](https://developers.google.com/web/fundamentals/primers/service-workers#register_a_service_worker).
 * A SW comes with a performance cost (bootup time) at first, see [Speed up Service Worker with Navigation Preloads](https://developers.google.com/web/updates/2017/02/navigation-preload).
 * Be aware of the "waiting phase" for the installation of a new version of your SW, read [The Service Worker Lifecycle](https://developers.google.com/web/fundamentals/primers/service-workers/lifecycle#skip_the_waiting_phase).
